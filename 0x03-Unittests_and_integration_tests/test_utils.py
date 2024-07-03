@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 " doc doc"
 import unittest
-from parameterized import parameterized # type: ignore
+from parameterized import parameterized  # type:ignore
 from utils import access_nested_map, get_json, memoize
 from typing import Any, Tuple, Dict
 from unittest.mock import patch, Mock
 
+
 class TestAccessNestedMap (unittest.TestCase):
-    "doc doc"
+
     @parameterized.expand(
         [
             ({"a": 1}, ("a",), 1),
